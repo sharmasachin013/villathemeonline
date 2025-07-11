@@ -1,0 +1,7 @@
+# villa_agency.folder_structure_config:
+#   path: "/admin/config/system/folder-structure-config"
+#   defaults:
+#     _title: "Folder structure config"
+#     _form: 'Drupal\villa_agency\Form\FolderStructureConfig'
+#   requirements:
+#     _permission: "administer site configuration"

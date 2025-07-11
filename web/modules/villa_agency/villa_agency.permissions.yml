@@ -1,0 +1,12 @@
+# administer group media managment types:
+#   title: 'Administer group media managment types'
+#   description: 'Maintain the types of group media managment entity.'
+#   restrict access: true
+# delete group media managment:
+#   title: 'Delete group media managment'
+# create group media managment:
+#   title: 'Create group media managment'
+# view group media managment:
+#   title: 'View group media managment'
+# edit group media managment:
+#   title: 'Edit group media managment'

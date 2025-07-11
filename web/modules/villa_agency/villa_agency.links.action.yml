@@ -1,0 +1,7 @@
+# villa_agency_group_media_managment.type_add:
+#   title: "Add group media managment type"
+#   route_name: entity.villa_agency_group_media_managment_type.add_form
+
+# villa_agency_group_media_managment.add_page:
+#   title: "Add group media managment"
+#   route_name: entity.villa_agency_group_media_managment.add_page

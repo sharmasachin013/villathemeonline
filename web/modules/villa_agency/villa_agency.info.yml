@@ -1,0 +1,5 @@
+name: 'villaagency'
+type: module
+description: 'Custom Module'
+package: Custom
+core_version_requirement: ^10

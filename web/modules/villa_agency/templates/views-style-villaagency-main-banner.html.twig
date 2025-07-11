@@ -1,0 +1,33 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a view template to display a list of rows.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the container.
+ * - rows: A list of rows.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's contents.
+ * - title: The title of this group of rows. May be empty.
+ *
+ * @see template_preprocess_views_style_villaagency_main_banner()
+ */
+#}
+<div{{ attributes }}>
+  {% set row_classes = [default_row_class ? 'views-row'] %}
+  <div class="main-banner">
+    <div class="owl-carousel owl-banner">
+  {% for row in rows %}
+   
+      {# {{ row.content }} #}
+
+            <div class={{ row.id }} style="background-image: url('{{ file_url(row.url)}}');">
+              <div class="header-text">
+                <span class="category">Toronto, <em>Canada</em></span>
+                <h2>{{ row.title }}</h2>
+              </div>
+            </div>
+
+  {% endfor %}
+  </div></div>
+</div>

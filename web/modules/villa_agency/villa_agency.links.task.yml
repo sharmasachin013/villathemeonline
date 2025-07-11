@@ -1,0 +1,26 @@
+# entity.villa_agency_group_media_managment.view:
+#   title: 'View'
+#   route_name: entity.villa_agency_group_media_managment.canonical
+#   base_route: entity.villa_agency_group_media_managment.canonical
+# entity.villa_agency_group_media_managment.edit_form:
+#   title: 'Edit'
+#   route_name: entity.villa_agency_group_media_managment.edit_form
+#   base_route: entity.villa_agency_group_media_managment.canonical
+# entity.villa_agency_group_media_managment.delete_form:
+#   title: 'Delete'
+#   route_name: entity.villa_agency_group_media_managment.delete_form
+#   base_route: entity.villa_agency_group_media_managment.canonical
+#   weight: 10
+# entity.villa_agency_group_media_managment.collection:
+#   title: 'Group Media Managments'
+#   route_name: entity.villa_agency_group_media_managment.collection
+#   base_route: system.admin_content
+#   weight: 10
+# entity.villa_agency_group_media_managment_type.edit_form:
+#   title: 'Edit'
+#   route_name: entity.villa_agency_group_media_managment_type.edit_form
+#   base_route: entity.villa_agency_group_media_managment_type.edit_form
+# entity.villa_agency_group_media_managment_type.collection:
+#   title: 'List'
+#   route_name: entity.villa_agency_group_media_managment_type.collection
+#   base_route: entity.villa_agency_group_media_managment_type.collection

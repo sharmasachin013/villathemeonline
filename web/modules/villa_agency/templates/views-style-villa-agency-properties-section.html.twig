@@ -1,0 +1,41 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a view template to display a list of rows.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the container.
+ * - rows: A list of rows.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's contents.
+ * - title: The title of this group of rows. May be empty.
+ *
+ * @see template_preprocess_views_style_villa_agency_properties_section()
+ */
+#}
+
+<div class="row">
+  {% for row in rows %}
+<div class="col-lg-4 col-md-6">
+  <div class="item">
+    <a href="property-details.html"><img src="{{ row.url }}" alt=""></a>
+    <span class="category">{{ row.term }}</span>
+    <h6>{{ row.price }}</h6>
+    <h4><a href="property-details.html">{{ row.title }}</a></h4>
+    <ul>
+    
+      <li>Total Flat Space <span>{{ row.totalflatSpace}}</span></li>
+      <li>Floor number <span>{{ row.floornumber}}</span></li>
+      <li>Number of rooms <span>{{ row.numberofrooms}}</span></li>
+      <li>Parking Available <span>{{ row.parkingavailable }}</span></li>
+      <li>Payment Process <span>{{ row.parkingavailable }}</span></li>
+    
+    </ul>
+    <div class="main-button">
+      <a href="property-details.html">Schedule a visit</a>
+    </div>
+  </div>
+</div>
+
+  {% endfor %}
+</div>

@@ -1,0 +1,16 @@
+# villa_agency.folder_structure_config:
+#   title: Folder Structure Settings
+#   parent: system.admin_config_system
+#   route_name: villa_agency.folder_structure_config
+#   weight: 10
+# # entity.villa_agency_group_media_managment_type.collection:
+# #   title: "Group Media Managment types"
+# #   description: "Manage and CRUD actions on Group Media Managment type."
+# #   parent: system.admin_structure
+# #   route_name: entity.villa_agency_group_media_managment_type.collection
+
+# # entity.villa_agency_group_media_managment.collection:
+# #   title: "Group Media Managments"
+# #   description: "List of group media managments."
+# #   route_name: entity.villa_agency_group_media_managment.collection
+# #   parent: system.admin_content

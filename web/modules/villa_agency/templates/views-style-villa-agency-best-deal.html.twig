@@ -1,0 +1,64 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a view template to display a list of rows.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the container.
+ * - rows: A list of rows.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's contents.
+ * - title: The title of this group of rows. May be empty.
+ *
+ * @see template_preprocess_views_style_villa_agency_best_deal()
+ */
+#}
+<div class="tabs-content">
+  <div class="row">
+    <div class="nav-wrapper ">
+      <ul class="nav nav-tabs" role="tablist">
+        {% for row in rows %}
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="appartment-tab" data-bs-toggle="tab" data-bs-target="#{{row.term}}"
+            type="button" role="tab" aria-controls="{{ row.term }}" aria-selected="true">{{ row.term }}</button>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="tab-content" id="myTabContent">
+      {% for row in rows %}
+      <div class="tab-pane fade" id="{{ row.term }}" role="tabpanel" aria-labelledby="{{row.term}}-tab">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="info-table">
+              <ul>
+               
+                <li>Total Flat Space <span>{{ row.totalflatSpace}}</span></li>
+                <li>Floor number <span>{{ row.floornumber}}</span></li>
+                <li>Number of rooms <span>{{ row.numberofrooms}}</span></li>
+                <li>Parking Available <span>{{ row.parkingavailable }}</span></li>
+                <li>Payment Process <span>{{ row.parkingavailable }}</span></li>
+               
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <img src="{{ row.url }}" alt="">
+          </div>
+          <div class="col-lg-3">
+            <h4>Extra Info About Property</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor pack incididunt ut labore et
+              dolore magna aliqua quised ipsum suspendisse.
+              <br><br>When you need free CSS templates, you can simply type TemplateMo in any search engine website. In
+              addition, you can type TemplateMo Portfolio, TemplateMo One Page Layouts, etc.
+            </p>
+            <div class="icon-button">
+              <a href="property-details.html"><i class="fa fa-calendar"></i> Schedule a visit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
