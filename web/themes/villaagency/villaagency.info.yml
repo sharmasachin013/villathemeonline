@@ -1,0 +1,23 @@
+name: VillaAgency
+type: theme
+base theme: stark
+description: A flexible theme with a responsive, mobile-first layout.
+package: yes
+core_version_requirement: ^10
+libraries:
+  - villaagency/global
+regions:
+  subheader: "Sub Header"
+  header: "Header"
+  main_banner: "Main Banner"
+  featured_section: "Featured Section"
+  video_section: "video section"
+  video_content: "video content"
+  fun_facts: "Fun Facts"
+  best_deal: "Best Deal"
+  properties_section: "Properties Section"
+  contact_section: "Contact Section"
+  contact_map: "Map"
+  contact_form: "Contact Form"
+  content: "Content"
+  footer: "Footer"
